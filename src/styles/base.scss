@@ -1,5 +1,17 @@
+$dark-bg: rgb(50, 75, 79);
+$text-on-dark: rgb(209, 207, 235);
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Poppins:wght@200&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+// font-family: 'Lobster Two', cursive;
+// font-family: 'Poppins', sans-serif;
