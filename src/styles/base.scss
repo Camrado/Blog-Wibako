@@ -1,5 +1,6 @@
-$dark-bg: rgb(50, 75, 79);
-$text-on-dark: rgb(209, 207, 235);
+$dark-bg: #0b0d0c;
+$navbar-bg: #000000;
+$text-color: rgb(209, 207, 235);
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Poppins:wght@200&display=swap");
 
@@ -7,11 +8,33 @@ $text-on-dark: rgb(209, 207, 235);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: $text-color;
 }
 
 a {
   text-decoration: none;
 }
 
+.wrapper {
+  width: 1100px;
+  margin: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $navbar-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $text-color;
+  border-radius: 10px;
+}
+
 // font-family: 'Lobster Two', cursive;
-// font-family: 'Poppins', sans-serif;
