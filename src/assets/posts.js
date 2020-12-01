@@ -3,7 +3,7 @@ export const posts = [
     id: 1,
     title: "Title of first post",
     shortContent:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, nostrum harum fugiat nulla repellendus nobis pariatur incidunt eos nam!",
+      "Islam ipsum dolor sit, amet consectetur adipisicing elit. Ullam, nostrum harum fugiat nulla repellendus nobis pariatur incidunt eos nam!",
     fullContent:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
   },
