@@ -9,6 +9,7 @@ $text-color: rgb(209, 207, 235);
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  user-select: none;
 }
 
 body {
@@ -17,6 +18,10 @@ body {
 
 a {
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .wrapper {

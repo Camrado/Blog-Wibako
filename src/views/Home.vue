@@ -1,18 +1,5 @@
 <template>
   <div class="home-page">
-    <section class="header-sec">
-      <div class="header-sec__text">
-        <h1>
-          Welcome to
-          <span class="header-sec__text_wibako">Wibako</span>
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore distinctio nemo dolor pariatur? Adipisci, asperiores rem id
-          suscipit eos debitis. Necessitatibus saepe fugiat id iusto dolorum, atque ab consectetur.
-        </p>
-      </div>
-    </section>
-
     <section class="information">
       <div class="wrapper">
         <h1>Lorem ipsum dolor sit amet.</h1>
@@ -85,32 +72,6 @@ export default {
 <style lang="scss" scoped>
 .home-page {
   background: $dark-bg;
-}
-
-.header-sec {
-  position: relative;
-  background-image: url("../assets/homepage/blog-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: -150px;
-  height: 100vh;
-  max-width: 100%;
-
-  &__text {
-    position: absolute;
-    top: 30%;
-    left: 5%;
-    max-width: 30%;
-
-    &_wibako {
-      border-bottom: 2px solid $text-color;
-    }
-
-    h1 {
-      font-size: 40px;
-      margin-bottom: 25px;
-    }
-  }
 }
 
 .information {
