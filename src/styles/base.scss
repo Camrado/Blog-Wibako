@@ -1,6 +1,8 @@
 $dark-bg: #0b0d0c;
 $navbar-bg: #000000;
 $text-color: rgb(209, 207, 235);
+$accent: #9993e0;
+$post-hover-bg: #313131;
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Poppins:wght@200&display=swap");
 
@@ -19,6 +21,7 @@ body {
 
 a {
   text-decoration: none;
+  color: $text-color;
 
   &:hover {
     text-decoration: underline;
@@ -39,7 +42,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $text-color;
+  background: $accent;
   border-radius: 10px;
 }
 

@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { computed, reactive } from "vue";
+import { computed, onMounted, reactive } from "vue";
 import { useRoute } from "vue-router";
 import router from "../router/index";
 
@@ -39,44 +39,38 @@ export default {
       } else if (currPage.value == "Posts") {
         return "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eos vel obcaecati blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eos vel obcaecati blanditiis.";
       } else if (currPage.value == "About") {
-        return "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eos vel obcaecati blanditiis, itaque magnam maiores incidunt nostrum in, quibusdam iste enim nam, necessitatibus quos dolorum impedit velit possimus natus?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. ";
+        return "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eos vel obcaecati blanditiis, itaque magnam maiores incidunt nostrum in, quibusdam iste enim nam, necessitatibus quos dolorum impedit velit possimus natus?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. ";
       }
     });
 
     const state = reactive({
       background: {
-        homeBG: true,
+        homeBG: false,
         postsBG: false,
         aboutBG: false,
       },
     });
 
-    // ? This computed returns keys of 'state.background' object
-    const keysOfBg = computed(() => {
-      let keys = [];
-      for (let k in state.background) keys.push(k);
+    //? It changes all of the 'state.background' values to false, and make the value of Current page true.
+    function changeBg() {
+      if (currPage.value == "Home") state.background.homeBG = true;
+      else state.background.homeBG = false;
 
-      return keys;
+      if (currPage.value == "Posts") state.background.postsBG = true;
+      else state.background.postsBG = false;
+
+      if (currPage.value == "About") state.background.aboutBG = true;
+      else state.background.aboutBG = false;
+    }
+
+    //? Do this method on start
+    onMounted(() => {
+      changeBg();
     });
 
-    //? It changes all of the 'state.background' values to false, and make the value of Current page true.
+    //? Do this every time we go to another page
     router.afterEach(() => {
-      if (currPage.value == "Home") {
-        for (let i = 0; i < keysOfBg.value.length; i++) {
-          state.background[keysOfBg.value[i]] = false;
-        }
-        state.background.homeBG = true;
-      } else if (currPage.value == "Posts") {
-        for (let i = 0; i < keysOfBg.value.length; i++) {
-          state.background[keysOfBg.value[i]] = false;
-        }
-        state.background.postsBG = true;
-      } else if (currPage.value == "About") {
-        for (let i = 0; i < keysOfBg.value.length; i++) {
-          state.background[keysOfBg.value[i]] = false;
-        }
-        state.background.aboutBG = true;
-      }
+      changeBg();
     });
 
     return {
@@ -106,6 +100,12 @@ export default {
     h1 {
       font-size: 40px;
       margin-bottom: 25px;
+      letter-spacing: 4px;
+      color: $accent;
+    }
+
+    p {
+      text-indent: 30px;
     }
   }
 }

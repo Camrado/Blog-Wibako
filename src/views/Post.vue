@@ -1,10 +1,10 @@
 <template>
   <div class="post wrapper">
-    <h1 class="post-title">
+    <h1 class="post__title">
       {{ state.post.title }}
     </h1>
-    <p class="post-content">
-      {{ state.post.fullContent }}
+    <p v-for="(text, index) in state.post.fullContent" :key="index" class="post__content">
+      {{ text }}
     </p>
   </div>
 </template>
@@ -34,6 +34,17 @@ export default {
 
 <style lang="scss" scoped>
 .post {
-  padding-top: 100px;
+  padding-top: 140px;
+
+  &__title {
+    color: $accent;
+    margin-bottom: 50px;
+    border-bottom: 2px solid $accent;
+  }
+
+  &__content {
+    text-indent: 60px;
+    margin-bottom: 20px;
+  }
 }
 </style>

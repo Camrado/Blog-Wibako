@@ -1,7 +1,5 @@
 <template>
-  <div>
-    About
-  </div>
+  <div class="about wrapper"></div>
 </template>
 
 <script>

@@ -55,7 +55,7 @@ export default {
   &__logo {
     font-size: 35px;
     font-family: "Lobster Two", cursive;
-    color: $text-color;
+    color: $accent;
   }
 
   &__links {
@@ -64,7 +64,7 @@ export default {
     width: 25%;
 
     &_link {
-      color: $text-color;
+      color: $accent;
       font-size: 24px;
       text-transform: uppercase;
     }

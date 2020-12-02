@@ -96,6 +96,7 @@ export default {
   }
 
   h1 {
+    color: $accent;
     font-size: 40px;
     margin-bottom: 50px;
   }

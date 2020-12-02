@@ -79,6 +79,7 @@ export default {
       font-size: 35px;
       font-family: "Lobster Two", cursive;
       margin-left: 13px;
+      color: $accent;
     }
     &_img {
       width: 40px;
@@ -90,6 +91,7 @@ export default {
     &_title {
       font-size: 30px;
       margin-bottom: 15px;
+      color: $accent;
       cursor: pointer;
 
       &:hover {
@@ -121,6 +123,7 @@ export default {
 
     &_title {
       font-size: 20px;
+      color: $accent;
     }
     &_input {
       margin-top: 30px;
@@ -129,14 +132,14 @@ export default {
       padding: 10px;
       outline: none;
       font-size: 18px;
-      color: $text-color;
-      border-bottom: 1px solid $text-color;
+      color: $accent;
+      border-bottom: 1px solid $accent;
     }
     &_btn {
       margin-top: 30px;
       outline: none;
       background: none;
-      border: 1px solid $text-color;
+      border: 1px solid $accent;
       color: $text-color;
       padding: 11px;
       font-size: 18px;
@@ -145,9 +148,9 @@ export default {
       transition: 0.5s;
 
       &:hover {
-        border: none;
-        background: $text-color;
         color: $dark-bg;
+        background: $accent;
+        font-weight: bold;
       }
     }
   }
