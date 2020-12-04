@@ -1,16 +1,16 @@
 <template>
-  <div class="posts wrapper">
-    <div class="posts__nav">
+  <main class="posts wrapper">
+    <nav class="posts__nav">
       <h1 class="posts__nav_title">Posts</h1>
       <input type="text" v-model="state.searchPost" placeholder="Search..." class="posts__nav_input" />
-    </div>
+    </nav>
     <div class="posts__content">
       <router-link v-for="post in filteredList" :to="{ name: 'Post', params: { postId: post.id } }" :key="post.id" class="posts__post">
         <h2 class="posts__post_title">{{ post.title }}</h2>
         <p class="posts__post_content">{{ post.shortContent }}</p>
       </router-link>
     </div>
-  </div>
+  </main>
 </template>
 
 <script>

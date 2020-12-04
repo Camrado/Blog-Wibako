@@ -1,15 +1,17 @@
 <template>
-  <nav class="navbar">
-    <div class="navbar__wrapper wrapper">
-      <router-link to="/" class="navbar__logo">
-        Wibako
-      </router-link>
-      <div class="navbar__links">
-        <router-link to="/posts" class="navbar__links_link">Posts</router-link>
-        <router-link to="/about" class="navbar__links_link">About</router-link>
+  <header>
+    <nav class="navbar">
+      <div class="navbar__wrapper wrapper">
+        <router-link to="/" class="navbar__logo">
+          Wibako
+        </router-link>
+        <div class="navbar__links">
+          <router-link to="/posts" class="navbar__links_link">Posts</router-link>
+          <router-link to="/about" class="navbar__links_link">About</router-link>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 </template>
 
 <script>

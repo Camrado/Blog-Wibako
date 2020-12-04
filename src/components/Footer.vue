@@ -58,6 +58,8 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
+  position: relative;
+  z-index: 50;
   margin-top: 70px;
   background: $navbar-bg;
   padding: 70px 0;

@@ -1,5 +1,5 @@
 <template>
-  <div class="home-page">
+  <main class="home-page">
     <section class="information">
       <div class="wrapper">
         <h1>Lorem ipsum dolor sit amet.</h1>
@@ -60,7 +60,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -87,6 +87,12 @@ export default {
 
     &_text {
       width: 55%;
+
+      &:first-letter {
+        font-family: "Lobster Two", cursive;
+        font-size: 30px;
+        color: $accent;
+      }
     }
 
     &_img {

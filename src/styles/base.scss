@@ -2,6 +2,7 @@ $dark-bg: #0b0d0c;
 $navbar-bg: #000000;
 $text-color: rgb(209, 207, 235);
 $accent: #9993e0;
+$selection: #776bff;
 $post-hover-bg: #313131;
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&family=Poppins:wght@200&display=swap");
@@ -11,7 +12,6 @@ $post-hover-bg: #313131;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  user-select: none;
 }
 
 body {
@@ -19,7 +19,12 @@ body {
   background: $dark-bg;
 }
 
+img {
+  user-select: none;
+}
+
 a {
+  user-select: none;
   text-decoration: none;
   color: $text-color;
 
@@ -44,6 +49,11 @@ a {
 ::-webkit-scrollbar-thumb {
   background: $accent;
   border-radius: 10px;
+}
+
+::selection {
+  color: $selection;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 // font-family: 'Lobster Two', cursive;

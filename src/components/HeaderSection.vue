@@ -84,6 +84,7 @@ export default {
 
 <style lang="scss" scoped>
 .header-sec {
+  z-index: 50;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
