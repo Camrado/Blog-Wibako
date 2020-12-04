@@ -16,7 +16,7 @@
               perferendis, dolores ab asperiores dignissimos labore consectetur quasi quisquam maxime fugit.
             </p>
           </div>
-          <img src="../assets/homepage/blog-post.svg" alt="Blog post" class="information__content_img" />
+          <div class="information__content_img first-sec-img"></div>
         </div>
       </div>
     </section>
@@ -36,7 +36,7 @@
               perferendis, dolores ab asperiores dignissimos labore consectetur quasi quisquam maxime fugit.
             </p>
           </div>
-          <img src="../assets/homepage/blog-post-2.svg" alt="Blog post" class="information__content_img" />
+          <div class="information__content_img third-sec-img"></div>
         </div>
       </div>
     </section>
@@ -56,7 +56,7 @@
               perferendis, dolores ab asperiores dignissimos labore consectetur quasi quisquam maxime fugit.
             </p>
           </div>
-          <img src="../assets/homepage/blog-post-3.svg" alt="Blog post" class="information__content_img" />
+          <div class="information__content_img second-sec-img"></div>
         </div>
       </div>
     </section>
@@ -90,14 +90,29 @@ export default {
 
       &:first-letter {
         font-family: "Lobster Two", cursive;
-        font-size: 30px;
+        font-size: 35px;
         color: $accent;
       }
     }
 
     &_img {
-      width: 35%;
-      user-select: none;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .first-sec-img {
+      width: 370px;
+      height: 350px;
+      background-image: url("../assets/homepage/blog-post.svg");
+    }
+    .second-sec-img {
+      width: 400px;
+      height: 280px;
+      background-image: url("../assets/homepage/blog-post-2.svg");
+    }
+    .third-sec-img {
+      width: 380px;
+      height: 260px;
+      background-image: url("../assets/homepage/blog-post-3.svg");
     }
   }
 

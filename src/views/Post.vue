@@ -48,7 +48,7 @@ export default {
 
     &:first-letter {
       font-family: "Lobster Two", cursive;
-      font-size: 30px;
+      font-size: 35px;
       color: $accent;
     }
   }

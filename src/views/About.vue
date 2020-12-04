@@ -15,19 +15,19 @@
     <aside class="about__contacts" :style="state.style">
       <ul class="about__contacts_list">
         <li class="about__contacts_elem">
-          <img src="@/assets/icons/instagram.svg" alt="Instagram" class="about__contacts_social-logo" />
+          <div class="about__contacts_social-logo instagram"></div>
           <p class="about__contacts_social-name">Instagram</p>
         </li>
         <li class="about__contacts_elem">
-          <img src="@/assets/icons/facebook.svg" alt="Facebook" class="about__contacts_social-logo" />
+          <div class="about__contacts_social-logo facebook"></div>
           <p class="about__contacts_social-name">Facebook</p>
         </li>
         <li class="about__contacts_elem">
-          <img src="@/assets/icons/twitter.svg" alt="Twitter" class="about__contacts_social-logo" />
+          <div class="about__contacts_social-logo twitter"></div>
           <p class="about__contacts_social-name">Twitter</p>
         </li>
         <li class="about__contacts_elem">
-          <img src="@/assets/icons/whatsapp.svg" alt="Whatsapp" class="about__contacts_social-logo" />
+          <div class="about__contacts_social-logo whatsapp"></div>
           <p class="about__contacts_social-name">Whatsapp</p>
         </li>
       </ul>
@@ -66,7 +66,7 @@ export default {
       } else if (window.pageYOffset + window.innerHeight >= document.body.scrollHeight - document.querySelector(".footer").clientHeight) {
         changeStyleOfContacts("absolute", null, "0", "30px");
       } else {
-        changeStyleOfContacts("fixed", "50%", "calc((100% - 1150px) / 2 + 2px)", null);
+        changeStyleOfContacts("fixed", "50%", "calc((100% - 1100px) / 2)", null);
       }
     }
 
@@ -110,7 +110,7 @@ export default {
 
       &:first-letter {
         font-family: "Lobster Two", cursive;
-        font-size: 30px;
+        font-size: 35px;
         color: $accent;
       }
     }
@@ -124,7 +124,7 @@ export default {
   }
 
   &__contacts {
-    width: 10%;
+    width: 121px;
 
     &_list {
       display: flex;
@@ -135,6 +135,7 @@ export default {
     &_elem {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       margin-bottom: 20px;
       cursor: pointer;
       transition: 0.5s;
@@ -147,7 +148,23 @@ export default {
 
     &_social-logo {
       width: 30px;
+      height: 30px;
       margin-right: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .instagram {
+      background-image: url("../assets/icons/instagram.svg");
+    }
+    .facebook {
+      background-image: url("../assets/icons/facebook.svg");
+    }
+    .twitter {
+      background-image: url("../assets/icons/twitter.svg");
+    }
+    .whatsapp {
+      background-image: url("../assets/icons/whatsapp.svg");
     }
   }
 }
