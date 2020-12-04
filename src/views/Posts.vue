@@ -6,6 +6,7 @@
     </nav>
     <div class="posts__content">
       <router-link v-for="post in filteredList" :to="{ name: 'Post', params: { postId: post.id } }" :key="post.id" class="posts__post">
+        <img :src="post.img" :alt="Image" class="posts__post_img" />
         <h2 class="posts__post_title">{{ post.title }}</h2>
         <p class="posts__post_content">{{ post.shortContent }}</p>
       </router-link>
@@ -79,12 +80,17 @@ export default {
     background: $navbar-bg;
     border-radius: 25px;
 
+    &_img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
     &_title {
       color: $accent;
+      margin: 25px 0;
     }
 
     &_content {
-      margin-top: 25px;
       position: relative;
       font-style: italic;
 

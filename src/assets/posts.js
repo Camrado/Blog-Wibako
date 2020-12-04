@@ -9,6 +9,8 @@ export const posts = [
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
     ],
+    //? require() is not a commonJs method. It's build in function from node.js. We have to use it to import modules.
+    img: require("@/assets/blog-posts/first.jpg"),
   },
   {
     id: 2,
@@ -20,6 +22,7 @@ export const posts = [
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
     ],
+    img: require("@/assets/blog-posts/second.jpg"),
   },
   {
     id: 3,
@@ -31,6 +34,7 @@ export const posts = [
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
     ],
+    img: require("@/assets/blog-posts/third.jpg"),
   },
   {
     id: 4,
@@ -42,6 +46,7 @@ export const posts = [
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
     ],
+    img: require("@/assets/blog-posts/fourth.jpg"),
   },
   {
     id: 5,
@@ -53,6 +58,7 @@ export const posts = [
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
     ],
+    img: require("@/assets/blog-posts/fifth.jpg"),
   },
   {
     id: 6,
@@ -64,6 +70,7 @@ export const posts = [
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
     ],
+    img: require("@/assets/blog-posts/sixth.jpg"),
   },
   {
     id: 7,
@@ -75,6 +82,7 @@ export const posts = [
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
     ],
+    img: require("@/assets/blog-posts/seventh.jpg"),
   },
   {
     id: 8,
@@ -86,6 +94,7 @@ export const posts = [
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
     ],
+    img: require("@/assets/blog-posts/eighth.jpg"),
   },
   {
     id: 9,
@@ -97,5 +106,6 @@ export const posts = [
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
       "Qui eum omnis, numquam obcaecati iure excepturi pariatur ipsa repellendus quos voluptates ea eligendi inventore animi repellat ut eaque commodi optio doloribus perferendis veritatis quidem voluptatem atque minima error! Ullam libero natus quae, alias mollitia impedit dolore? Itaque accusantium dolorum esse, temporibus sapiente ratione iste? Ut, sint.",
     ],
+    img: require("@/assets/blog-posts/ninth.jpg"),
   },
 ];
