@@ -1,8 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/views/Home.vue";
-import Posts from "@/views/Posts.vue";
-import About from "@/views/About.vue";
-import Post from "@/views/Post.vue";
 
 const routes = [
   {
@@ -16,7 +13,7 @@ const routes = [
   {
     path: "/posts",
     name: "Posts",
-    component: Posts,
+    component: () => import("../views/Posts.vue"), //? Lazy load
     meta: {
       title: "Wibako - Posts",
     },
@@ -24,7 +21,7 @@ const routes = [
   {
     path: "/about",
     name: "About",
-    component: About,
+    component: () => import("../views/About.vue"), //? Lazy load
     meta: {
       title: "Wibako - About",
     },
@@ -32,7 +29,7 @@ const routes = [
   {
     path: "/posts/post/:postId",
     name: "Post",
-    component: Post,
+    component: () => import("../views/Post.vue"), //? Lazy load
     meta: {
       title: "Wibako - Post",
     },

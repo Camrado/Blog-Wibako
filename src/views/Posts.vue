@@ -6,7 +6,8 @@
     </nav>
     <div class="posts__content">
       <router-link v-for="post in filteredList" :to="{ name: 'Post', params: { postId: post.id } }" :key="post.id" class="posts__post">
-        <img :src="post.img" :alt="Image" class="posts__post_img" />
+        <img :src="post.img" alt="Image" class="posts__post_img" />
+        <p class="posts__post_tags">{{ post.tags }}</p>
         <h2 class="posts__post_title">{{ post.title }}</h2>
         <p class="posts__post_content">{{ post.shortContent }}</p>
       </router-link>
@@ -30,7 +31,8 @@ export default {
       posts.filter(
         (post) =>
           post.title.toLowerCase().includes(state.searchPost.toLowerCase()) ||
-          post.shortContent.toLowerCase().includes(state.searchPost.toLowerCase())
+          post.shortContent.toLowerCase().includes(state.searchPost.toLowerCase()) ||
+          post.tags.toLowerCase().includes(state.searchPost.toLowerCase())
       )
     );
 
@@ -85,9 +87,15 @@ export default {
       border-radius: 10px;
     }
 
+    &_tags {
+      margin: 15px 0;
+      font-size: 15px;
+      color: $tagcolor;
+    }
+
     &_title {
       color: $accent;
-      margin: 25px 0;
+      margin-bottom: 25px;
     }
 
     &_content {

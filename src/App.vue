@@ -1,4 +1,6 @@
 <template>
+  <Preloader />
+
   <NavigationBar />
 
   <HeaderSection v-if="currPage == 'Home' || currPage == 'Posts' || currPage == 'About'" />
@@ -11,13 +13,15 @@
 <script>
 import { computed } from "vue";
 import { useRoute } from "vue-router";
+
+import Preloader from "./components/Preloader.vue";
 import NavigationBar from "@/components/NavigationBar.vue";
 import HeaderSection from "@/components/HeaderSection.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
-  components: { NavigationBar, HeaderSection, Footer },
+  components: { Preloader, NavigationBar, HeaderSection, Footer },
 
   setup() {
     const route = useRoute();
