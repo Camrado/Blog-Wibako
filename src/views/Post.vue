@@ -4,8 +4,6 @@
       {{ state.post.title }}
     </h1>
 
-    <!-- <img :src="state.post.img[0]" alt="Image" class="post__img" /> -->
-
     <div v-for="(text, index) in state.post.fullContent" :key="index" class="post__content">
       <img :src="state.post.img[index / 3]" alt="Image" v-if="index % 3 == 0" class="post__img" />
       <p>{{ text }}</p>
