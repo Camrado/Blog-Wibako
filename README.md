@@ -1,24 +1,22 @@
-# vue-event
+# Wibako - blog
 
-## Project setup
-```
-npm install
-```
+## Why did I created it?
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Eh..., I've recently learned something about Vue.js 3, and I just created this web-application (wtihout any template) for practice.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Used technologies
 
-### Lints and fixes files
-```
-npm run lint
-```
+- Vue CLI 3
+- SCSS
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Used dependencies/plugins in Vue
+
+- Vue Router (plugin)
+- SCSS (dependencies):
+  - node-sass
+  - sass-loader
+- For server (dependencies):
+  - connect-history-api-fallback
+  - express
+  - express-sslify
+  - serve-static
