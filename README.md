@@ -8,6 +8,8 @@ It's like a blog company. There are 3 main pages **Home**, **Posts** and **About
 
 ### **Those were only the most important features.**
 
+### [Link](https://wibako.herokuapp.com/)
+
 ## Used technologies
 
 - Vue CLI 3
