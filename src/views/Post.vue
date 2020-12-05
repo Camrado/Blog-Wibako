@@ -1,12 +1,9 @@
 <template>
-  <header class="post__header">
+  <main class="post wrapper">
     <h1 class="post__title">
       {{ state.post.title }}
     </h1>
-    <img :src="state.post.img" alt="Image" class="post__header_img" />
-  </header>
-
-  <main class="post wrapper">
+    <img :src="state.post.img" alt="Image" class="post__img" />
     <p v-for="(text, index) in state.post.fullContent" :key="index" class="post__content">
       {{ text }}
     </p>
@@ -39,35 +36,16 @@ export default {
 
 <style lang="scss" scoped>
 .post {
-  padding-top: 50px;
-
-  &__header {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &_img {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: auto;
-      opacity: 0.6;
-    }
-  }
+  padding-top: 150px;
 
   &__title {
-    max-width: 55vw;
-    position: relative;
     color: $accent;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1.5vw;
-    border-radius: 30px;
+    border-bottom: 2px solid $accent;
+  }
+
+  &__img {
+    width: 80%;
+    margin: 25px 0;
   }
 
   &__content {
