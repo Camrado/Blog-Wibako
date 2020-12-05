@@ -6,7 +6,9 @@
     </nav>
     <div class="posts__content">
       <router-link v-for="post in filteredList" :to="{ name: 'Post', params: { postId: post.id } }" :key="post.id" class="posts__post">
-        <img :src="post.img" alt="Image" class="posts__post_img" />
+        <div class="posts__post_img-container">
+          <img :src="post.img[0]" alt="Image" class="posts__post_img" />
+        </div>
         <p class="posts__post_tags">{{ post.tags }}</p>
         <h2 class="posts__post_title">{{ post.title }}</h2>
         <p class="posts__post_content">{{ post.shortContent }}</p>
@@ -81,10 +83,19 @@ export default {
     padding: 30px;
     background: $navbar-bg;
     border-radius: 25px;
+    text-decoration: none !important;
+
+    &_img-container {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
 
     &_img {
       width: 100%;
       border-radius: 10px;
+      transition: 1s;
     }
 
     &_tags {
@@ -114,11 +125,8 @@ export default {
     }
 
     &:hover {
-      text-decoration: none;
-      background: $post-hover-bg;
-
-      .posts__post_content:after {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), $post-hover-bg);
+      .posts__post_img {
+        transform: scale(1.2);
       }
     }
   }

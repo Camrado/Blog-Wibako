@@ -3,10 +3,14 @@
     <h1 class="post__title">
       {{ state.post.title }}
     </h1>
-    <img :src="state.post.img" alt="Image" class="post__img" />
-    <p v-for="(text, index) in state.post.fullContent" :key="index" class="post__content">
-      {{ text }}
-    </p>
+
+    <!-- <img :src="state.post.img[0]" alt="Image" class="post__img" /> -->
+
+    <div v-for="(text, index) in state.post.fullContent" :key="index" class="post__content">
+      <img :src="state.post.img[index / 3]" alt="Image" v-if="index % 3 == 0" class="post__img" />
+      <p>{{ text }}</p>
+    </div>
+
     <p class="post__tags">{{ state.post.tags }}</p>
   </main>
 </template>
@@ -43,15 +47,21 @@ export default {
     border-bottom: 2px solid $accent;
   }
 
-  &__img {
-    width: 80%;
-    margin: 25px 0;
+  &__content {
+    width: 100%;
+    margin: 30px 0;
+
+    p {
+      text-indent: 60px;
+      padding-bottom: 50px;
+    }
   }
 
-  &__content {
-    width: 80%;
-    text-indent: 60px;
-    margin-bottom: 20px;
+  &__img {
+    width: 50%;
+    margin: 10px 0 10px 30px;
+    border-radius: 10px;
+    float: right;
   }
 
   &__tags {
