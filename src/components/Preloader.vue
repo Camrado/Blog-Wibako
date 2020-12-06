@@ -5,17 +5,14 @@
 </template>
 
 <script>
-import { onMounted } from "vue";
-
 export default {
   name: "Preloader",
 
   setup() {
-    onMounted(() => {
-      window.addEventListener("load", function() {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden"; // class "loader hidden"
-      });
+    //* If some code placed in the root of setup(), it means that it's in 'created' hook
+    window.addEventListener("load", function() {
+      const loader = document.querySelector(".loader");
+      loader.className += " hidden"; //? "loader hidden"
     });
   },
 };
@@ -48,7 +45,7 @@ export default {
 }
 
 @keyframes fadeOut {
-  100% {
+  to {
     opacity: 0;
     visibility: hidden;
   }

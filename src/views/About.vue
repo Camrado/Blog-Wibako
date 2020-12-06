@@ -9,7 +9,9 @@
           nam nulla fuga dolore dolorum itaque! Labore id commodi soluta nemo necessitatibus doloribus atque, laudantium eum tempora nulla dolorum,
           earum harum explicabo quia ab animi placeat iure quas eveniet voluptas. Culpa officia recusandae laborum quas voluptates.
         </section>
+
         <section class="about__text_img"></section>
+
         <section class="about__text_section">
           Ipsum dolor sit amet consectetur adipisicing elit. Quam impedit voluptate ullam commodi eaque, sunt ab voluptas. Odit blanditiis quis quo
           commodi possimus iure sapiente, veniam non in, dignissimos tempora mollitia, autem corporis assumenda accusamus aut pariatur quae ipsam nam

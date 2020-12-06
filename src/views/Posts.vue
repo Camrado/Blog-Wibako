@@ -4,6 +4,7 @@
       <h1 class="posts__nav_title">Posts</h1>
       <input type="text" v-model="state.searchPost" placeholder="Search..." class="posts__nav_input" />
     </nav>
+
     <div class="posts__content">
       <router-link v-for="post in filteredList" :to="{ name: 'Post', params: { postId: post.id } }" :key="post.id" class="posts__post">
         <div class="posts__post_img-container">

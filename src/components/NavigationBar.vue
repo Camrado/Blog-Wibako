@@ -29,8 +29,6 @@ export default {
       let navbar = document.querySelector(".navbar");
       navbar.classList.toggle("changebg", window.scrollY > 0);
     }
-
-    return {};
   },
 };
 </script>
