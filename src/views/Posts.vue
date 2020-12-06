@@ -21,15 +21,12 @@
 <script>
 import { posts } from "@/assets/posts.js";
 import { computed, reactive } from "vue";
-
 export default {
   name: "Posts",
-
   setup() {
     const state = reactive({
       searchPost: "",
     });
-
     const filteredList = computed(() =>
       posts.filter(
         (post) =>
@@ -38,7 +35,6 @@ export default {
           post.tags.toLowerCase().includes(state.searchPost.toLowerCase())
       )
     );
-
     return {
       posts,
       state,
@@ -51,13 +47,11 @@ export default {
 <style lang="scss" scoped>
 .posts {
   padding-top: 80px;
-
   &__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-
     &_title {
       color: $accent;
       font-size: 40px;
@@ -72,48 +66,40 @@ export default {
       border-bottom: 1px solid $accent;
     }
   }
-
   &__content {
     margin-top: 75px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
   }
-
   &__post {
     padding: 30px;
     background: $navbar-bg;
     border-radius: 25px;
     text-decoration: none !important;
-
     &_img-container {
       width: 100%;
       height: auto;
       overflow: hidden;
       border-radius: 10px;
     }
-
     &_img {
       width: 100%;
       border-radius: 10px;
       transition: 1s;
     }
-
     &_tags {
       margin: 15px 0;
       font-size: 15px;
       color: $tagcolor;
     }
-
     &_title {
       color: $accent;
       margin-bottom: 25px;
     }
-
     &_content {
       position: relative;
       font-style: italic;
-
       &:after {
         content: "";
         width: 100%;
@@ -124,7 +110,6 @@ export default {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0), $navbar-bg);
       }
     }
-
     &:hover {
       .posts__post_img {
         transform: scale(1.2);

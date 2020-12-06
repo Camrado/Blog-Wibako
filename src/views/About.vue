@@ -44,12 +44,16 @@
 </template>
 
 <script>
-import { onMounted, reactive } from "vue";
+import { computed, onMounted, reactive } from "vue";
+import { useRoute } from "vue-router";
 
 export default {
   name: "About",
 
   setup() {
+    const router = useRoute();
+    const currPageName = computed(() => router.name);
+
     const state = reactive({
       style: {
         position: "absolute",
@@ -64,17 +68,18 @@ export default {
     });
 
     function contactsOnScroll() {
-      //? window.pageYOffset is a height from the top of page to the top of visible part of page
-      //? getBoundingClientRect().top is a height from the top of visible part of page to the top of an element
-      if (window.pageYOffset <= document.querySelector(".about__content").getBoundingClientRect().top) {
-        changeStyleOfContacts("absolute", "0", "0", null);
-
-        //? window.innerHeight is a height of the visible part of a page
-        //? document.body.scrollHeight is a heigt of the whole page
-      } else if (window.pageYOffset + window.innerHeight >= document.body.scrollHeight - document.querySelector(".footer").clientHeight) {
-        changeStyleOfContacts("absolute", null, "0", "30px");
-      } else {
-        changeStyleOfContacts("fixed", "50%", "calc((100% - 1100px) / 2)", null);
+      if (currPageName.value == "About") {
+        //? window.pageYOffset is a height from the top of page to the top of visible part of page
+        //? getBoundingClientRect().top is a height from the top of visible part of page to the top of an element
+        if (window.pageYOffset <= document.querySelector(".about__content").getBoundingClientRect().top) {
+          changeStyleOfContacts("absolute", "0", "0", null);
+          //? window.innerHeight is a height of the visible part of a page
+          //? document.body.scrollHeight is a heigt of the whole page
+        } else if (window.pageYOffset + window.innerHeight >= document.body.scrollHeight - document.querySelector(".footer").clientHeight) {
+          changeStyleOfContacts("absolute", null, "0", "30px");
+        } else {
+          changeStyleOfContacts("fixed", "50%", "calc((100% - 1100px) / 2)", null);
+        }
       }
     }
 
@@ -98,24 +103,19 @@ export default {
   justify-content: space-between;
   min-height: 100vh;
   position: relative;
-
   &__content {
     width: 70%;
   }
-
   &__title {
     color: $accent;
     font-size: 35px;
     margin-bottom: 30px;
   }
-
   &__text {
     color: $text-color;
     font-size: 18px;
-
     &_section {
       text-indent: 50px;
-
       &:first-letter {
         font-family: "Lobster Two", cursive;
         font-size: 35px;
@@ -131,16 +131,13 @@ export default {
       margin: 50px 0;
     }
   }
-
   &__contacts {
     width: 121px;
-
     &_list {
       display: flex;
       flex-direction: column;
       list-style: none;
     }
-
     &_elem {
       display: flex;
       align-items: center;
@@ -149,12 +146,10 @@ export default {
       cursor: pointer;
       transition: 0.5s;
       color: $accent;
-
       &:hover {
         filter: invert(0.6);
       }
     }
-
     &_social-logo {
       width: 30px;
       height: 30px;
@@ -162,7 +157,6 @@ export default {
       background-repeat: no-repeat;
       background-size: cover;
     }
-
     .instagram {
       background-image: url("../assets/icons/instagram.svg");
     }

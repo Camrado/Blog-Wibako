@@ -73,28 +73,23 @@ export default {
 .home-page {
   background: $dark-bg;
 }
-
 .information {
   min-height: 70vh;
   padding-top: 100px;
-
   &__content {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-
     &_text {
       width: 55%;
-
       &:first-letter {
         font-family: "Lobster Two", cursive;
         font-size: 35px;
         color: $accent;
       }
     }
-
     &_img {
       background-repeat: no-repeat;
       background-size: cover;
@@ -115,18 +110,15 @@ export default {
       background-image: url("../assets/homepage/blog-post-3.svg");
     }
   }
-
   h1 {
     color: $accent;
     font-size: 40px;
     margin-bottom: 50px;
   }
-
   p {
     text-indent: 65px;
     margin-bottom: 20px;
   }
-
   &:nth-child(odd) {
     .information__content_text {
       order: 2;
