@@ -6,7 +6,12 @@
     </nav>
 
     <div class="posts__content">
-      <router-link v-for="post in filteredList" :to="{ name: 'Post', params: { postId: post.id } }" :key="post.id" class="posts__post">
+      <router-link
+        v-for="post in filteredList"
+        :to="{ name: 'Post', params: { postId: post.id } }"
+        :key="post.id"
+        class="posts__post"
+      >
         <div class="posts__post_img-container">
           <img :src="post.img[0]" alt="Image" class="posts__post_img" />
         </div>
@@ -19,13 +24,13 @@
 </template>
 
 <script>
-import { posts } from "@/assets/posts.js";
-import { computed, reactive } from "vue";
+import { posts } from '@/assets/posts.js';
+import { computed, reactive } from 'vue';
 export default {
-  name: "Posts",
+  name: 'Posts',
   setup() {
     const state = reactive({
-      searchPost: "",
+      searchPost: ''
     });
     const filteredList = computed(() =>
       posts.filter(
@@ -38,9 +43,9 @@ export default {
     return {
       posts,
       state,
-      filteredList,
+      filteredList
     };
-  },
+  }
 };
 </script>
 
@@ -101,7 +106,7 @@ export default {
       position: relative;
       font-style: italic;
       &:after {
-        content: "";
+        content: '';
         width: 100%;
         height: 80px;
         position: absolute;

@@ -6,15 +6,15 @@
 
 <script>
 export default {
-  name: "Preloader",
+  name: 'Preloader',
 
   setup() {
     //* If some code placed in the root of setup(), it means that it's in 'created' hook
-    window.addEventListener("load", function() {
-      const loader = document.querySelector(".loader");
-      loader.className += " hidden"; //? "loader hidden"
+    window.addEventListener('load', function() {
+      const loader = document.querySelector('.loader');
+      loader.className += ' hidden'; // ? "loader hidden"
     });
-  },
+  }
 };
 </script>
 
@@ -34,7 +34,7 @@ export default {
   &__image {
     width: 800px;
     height: 220px;
-    background-image: url("../assets/icons/loading.gif");
+    background-image: url('../assets/icons/loading.gif');
     background-size: cover;
     background-repeat: no-repeat;
   }

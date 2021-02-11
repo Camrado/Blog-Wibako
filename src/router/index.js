@@ -1,44 +1,44 @@
-import { createRouter, createWebHistory } from "vue-router";
-import Home from "@/views/Home.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import Home from '@/views/Home.vue';
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
+    path: '/',
+    name: 'Home',
     component: Home,
     meta: {
-      title: "Wibako - Home page",
-    },
+      title: 'Wibako - Home page'
+    }
   },
   {
-    path: "/posts",
-    name: "Posts",
-    component: () => import("../views/Posts.vue"), //? Lazy load
+    path: '/posts',
+    name: 'Posts',
+    component: () => import('../views/Posts.vue'), // ? Lazy load
     meta: {
-      title: "Wibako - Posts",
-    },
+      title: 'Wibako - Posts'
+    }
   },
   {
-    path: "/about",
-    name: "About",
-    component: () => import("../views/About.vue"), //? Lazy load
+    path: '/about',
+    name: 'About',
+    component: () => import('../views/About.vue'), // ? Lazy load
     meta: {
-      title: "Wibako - About",
-    },
+      title: 'Wibako - About'
+    }
   },
   {
-    path: "/posts/post/:postId",
-    name: "Post",
-    component: () => import("../views/Post.vue"), //? Lazy load
+    path: '/posts/post/:postId',
+    name: 'Post',
+    component: () => import('../views/Post.vue'), // ? Lazy load
     meta: {
-      title: "Wibako - Post",
-    },
-  },
+      title: 'Wibako - Post'
+    }
+  }
 ];
 
 export const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes
 });
 
 router.beforeEach(async (to) => {

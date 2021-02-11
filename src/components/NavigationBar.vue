@@ -15,21 +15,21 @@
 </template>
 
 <script>
-import { onMounted } from "vue";
+import { onMounted } from 'vue';
 
 export default {
-  name: "NavigationBar",
+  name: 'NavigationBar',
 
   setup() {
     onMounted(() => {
-      window.addEventListener("scroll", changeBgOfNav);
+      window.addEventListener('scroll', changeBgOfNav);
     });
 
     function changeBgOfNav() {
-      let navbar = document.querySelector(".navbar");
-      navbar.classList.toggle("changebg", window.scrollY > 0);
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('changebg', window.scrollY > 0);
     }
-  },
+  }
 };
 </script>
 
@@ -54,7 +54,7 @@ export default {
 
   &__logo {
     font-size: 35px;
-    font-family: "Lobster Two", cursive;
+    font-family: 'Lobster Two', cursive;
     color: $accent;
   }
 

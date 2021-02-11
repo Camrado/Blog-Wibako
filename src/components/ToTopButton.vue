@@ -3,39 +3,39 @@
 </template>
 
 <script>
-import { onMounted } from "vue";
+import { onMounted } from 'vue';
 
 export default {
-  name: "To-Top-Button",
+  name: 'To-Top-Button',
 
   setup() {
     onMounted(() => {
-      document.addEventListener("scroll", handleScroll);
+      document.addEventListener('scroll', handleScroll);
     });
 
     function handleScroll() {
-      let scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+      const scrollToTopBtn = document.querySelector('.scrollToTopBtn');
 
       if (window.pageYOffset > 150) {
-        scrollToTopBtn.style.display = "block";
+        scrollToTopBtn.style.display = 'block';
       } else {
-        scrollToTopBtn.style.display = "none";
+        scrollToTopBtn.style.display = 'none';
       }
     }
 
     function scrollToTop() {
-      let rootElement = document.documentElement;
+      const rootElement = document.documentElement;
 
       rootElement.scrollTo({
         top: 0,
-        behavior: "smooth",
+        behavior: 'smooth'
       });
     }
 
     return {
-      scrollToTop,
+      scrollToTop
     };
-  },
+  }
 };
 </script>
 
@@ -44,7 +44,7 @@ export default {
   width: 50px;
   height: 50px;
   background: none;
-  background-image: url("../assets/icons/to_top.png");
+  background-image: url('../assets/icons/to_top.png');
   background-repeat: no-repeat;
   background-size: cover;
   border: none;

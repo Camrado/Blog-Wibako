@@ -1,41 +1,44 @@
 <template>
-  <Preloader />
+  <div>
+    <Preloader />
 
-  <NavigationBar />
+    <NavigationBar />
 
-  <HeaderSection v-if="currPage == 'Home' || currPage == 'Posts' || currPage == 'About'" />
+    <HeaderSection v-if="currPage == 'Home' || currPage == 'Posts' || currPage == 'About'" />
 
-  <router-view />
+    <router-view />
 
-  <To-Top-Button />
+    <To-Top-Button />
 
-  <Footer />
+    <Footer />
+  </div>
 </template>
 
 <script>
-import { computed } from "vue";
-import { useRoute } from "vue-router";
-import Preloader from "./components/Preloader.vue";
-import NavigationBar from "@/components/NavigationBar.vue";
-import HeaderSection from "@/components/HeaderSection.vue";
-import Footer from "@/components/Footer.vue";
-import ToTopButton from "./components/ToTopButton.vue";
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
+import Preloader from './components/Preloader.vue';
+import NavigationBar from '@/components/NavigationBar.vue';
+import HeaderSection from '@/components/HeaderSection.vue';
+import Footer from '@/components/Footer.vue';
+import ToTopButton from './components/ToTopButton.vue';
+
 export default {
-  name: "App",
+  name: 'App',
   components: { Preloader, NavigationBar, HeaderSection, Footer, ToTopButton },
   setup() {
     const route = useRoute();
     const currPage = computed(() => route.name);
     return {
-      currPage,
+      currPage
     };
-  },
+  }
 };
 </script>
 
 <style lang="scss">
 #app {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: $dark-bg;
 }
 </style>

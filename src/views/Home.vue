@@ -6,14 +6,16 @@
         <div class="information__content">
           <div class="information__content_text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita error quas laudantium mollitia, similique cum voluptas?
-              Perferendis, voluptatibus temporibus? Repellat beatae aliquam quaerat? Exercitationem veritatis autem unde quae sit vel, earum obcaecati
-              enim laborum? Laborum eum consequuntur repellendus dolores nobis reiciendis, amet impedit error at, tempore quasi a modi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita error quas laudantium mollitia, similique
+              cum voluptas? Perferendis, voluptatibus temporibus? Repellat beatae aliquam quaerat? Exercitationem veritatis autem
+              unde quae sit vel, earum obcaecati enim laborum? Laborum eum consequuntur repellendus dolores nobis reiciendis, amet
+              impedit error at, tempore quasi a modi.
             </p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, quo ab nihil mollitia accusamus dolore recusandae sapiente sunt,
-              pariatur aliquid voluptate ducimus in soluta ullam tempora minima! Reiciendis vero tempore numquam debitis? Explicabo laborum
-              perferendis, dolores ab asperiores dignissimos labore consectetur quasi quisquam maxime fugit.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, quo ab nihil mollitia accusamus dolore
+              recusandae sapiente sunt, pariatur aliquid voluptate ducimus in soluta ullam tempora minima! Reiciendis vero tempore
+              numquam debitis? Explicabo laborum perferendis, dolores ab asperiores dignissimos labore consectetur quasi quisquam
+              maxime fugit.
             </p>
           </div>
           <div class="information__content_img first-sec-img"></div>
@@ -26,14 +28,16 @@
         <div class="information__content">
           <div class="information__content_text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita error quas laudantium mollitia, similique cum voluptas?
-              Perferendis, voluptatibus temporibus? Repellat beatae aliquam quaerat? Exercitationem veritatis autem unde quae sit vel, earum obcaecati
-              enim laborum? Laborum eum consequuntur repellendus dolores nobis reiciendis, amet impedit error at, tempore quasi a modi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita error quas laudantium mollitia, similique
+              cum voluptas? Perferendis, voluptatibus temporibus? Repellat beatae aliquam quaerat? Exercitationem veritatis autem
+              unde quae sit vel, earum obcaecati enim laborum? Laborum eum consequuntur repellendus dolores nobis reiciendis, amet
+              impedit error at, tempore quasi a modi.
             </p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, quo ab nihil mollitia accusamus dolore recusandae sapiente sunt,
-              pariatur aliquid voluptate ducimus in soluta ullam tempora minima! Reiciendis vero tempore numquam debitis? Explicabo laborum
-              perferendis, dolores ab asperiores dignissimos labore consectetur quasi quisquam maxime fugit.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, quo ab nihil mollitia accusamus dolore
+              recusandae sapiente sunt, pariatur aliquid voluptate ducimus in soluta ullam tempora minima! Reiciendis vero tempore
+              numquam debitis? Explicabo laborum perferendis, dolores ab asperiores dignissimos labore consectetur quasi quisquam
+              maxime fugit.
             </p>
           </div>
           <div class="information__content_img third-sec-img"></div>
@@ -46,14 +50,16 @@
         <div class="information__content">
           <div class="information__content_text">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita error quas laudantium mollitia, similique cum voluptas?
-              Perferendis, voluptatibus temporibus? Repellat beatae aliquam quaerat? Exercitationem veritatis autem unde quae sit vel, earum obcaecati
-              enim laborum? Laborum eum consequuntur repellendus dolores nobis reiciendis, amet impedit error at, tempore quasi a modi.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae expedita error quas laudantium mollitia, similique
+              cum voluptas? Perferendis, voluptatibus temporibus? Repellat beatae aliquam quaerat? Exercitationem veritatis autem
+              unde quae sit vel, earum obcaecati enim laborum? Laborum eum consequuntur repellendus dolores nobis reiciendis, amet
+              impedit error at, tempore quasi a modi.
             </p>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, quo ab nihil mollitia accusamus dolore recusandae sapiente sunt,
-              pariatur aliquid voluptate ducimus in soluta ullam tempora minima! Reiciendis vero tempore numquam debitis? Explicabo laborum
-              perferendis, dolores ab asperiores dignissimos labore consectetur quasi quisquam maxime fugit.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, quo ab nihil mollitia accusamus dolore
+              recusandae sapiente sunt, pariatur aliquid voluptate ducimus in soluta ullam tempora minima! Reiciendis vero tempore
+              numquam debitis? Explicabo laborum perferendis, dolores ab asperiores dignissimos labore consectetur quasi quisquam
+              maxime fugit.
             </p>
           </div>
           <div class="information__content_img second-sec-img"></div>
@@ -65,7 +71,7 @@
 
 <script>
 export default {
-  name: "Home",
+  name: 'Home'
 };
 </script>
 
@@ -85,7 +91,7 @@ export default {
     &_text {
       width: 55%;
       &:first-letter {
-        font-family: "Lobster Two", cursive;
+        font-family: 'Lobster Two', cursive;
         font-size: 35px;
         color: $accent;
       }
@@ -97,17 +103,17 @@ export default {
     .first-sec-img {
       width: 370px;
       height: 350px;
-      background-image: url("../assets/homepage/blog-post.svg");
+      background-image: url('../assets/homepage/blog-post.svg');
     }
     .second-sec-img {
       width: 400px;
       height: 280px;
-      background-image: url("../assets/homepage/blog-post-2.svg");
+      background-image: url('../assets/homepage/blog-post-2.svg');
     }
     .third-sec-img {
       width: 380px;
       height: 260px;
-      background-image: url("../assets/homepage/blog-post-3.svg");
+      background-image: url('../assets/homepage/blog-post-3.svg');
     }
   }
   h1 {
